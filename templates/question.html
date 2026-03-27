@@ -18,9 +18,24 @@
 
     </header>
 
-    <main></main>
+     <main class="text-center">
+        <!-- Question -->
+        <p class="text-[21px] m-12  text-center "> {{enonce}}</p>
+        <!-- Reponses possibles -->
+        <ul class="my-10">
+            <li> <a href="/reponse/0">  {{reponses[0]}} </a></li>
+            <li> <a href="/reponse/1"> {{reponses[1]}} </a></li>
+            <li> <a href="/reponse/2"> {{reponses[2]}} </a></li>
+            <li> <a href="/reponse/3"> {{reponses[3]}} </a></li>
+        </ul>
+        
+        <p class="italic"> Question {{session["numero_question"] + 1 }} sur 6 </p>
 
-    <footer></footer>
+    </main>
+
+    <footer class="bg-orange-400 absolute bottom-0 w-full py-6">
+        <p class="text-center macondo-swash-caps-regular">Copyright &copy Sawsane</p>
+    </footer>
 
 </body>
 </html>

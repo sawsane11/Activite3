@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Quizz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+    <style>
+       .macondo-swash-caps-regular {
+            font-family: "Macondo Swash Caps", cursive;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+    </style>
+</head>
+<body class="macondo-swash-caps-regular">
+    <!-- HEADER DU SITE avec le TITRE DU SITE -->
+    <header > 
+        <h1 class=" text-[32px] font-bold text-center text-white bg-orange-400 py-4"> Quel personnage de Shingeki no kyojin es-tu ? </h1>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="text-center">
+        <!-- Resultat -->
+        <h1 class = "p-6 text-2xl"> Tu es {{nom_gagnant}} !</h1>
+        <!-- Image -->
+        <div class="flex justify-center my-12">
+            <img class="h-100" src="/static/{{nom_gagnant}}.jpg">
+        </div>
+                <p class="text-[21px] m-12  text-center "> {{resultat_description}}</p>
+
+        <!-- Bouton pour commencer le quizz -->
+        <a class="bg-orange-400 py-4 px-6 rounded-lg text-white hover:bg-orange-300" href="/"> On recommence ! </a>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-orange-400 absolute bottom-0 w-full py-6">
+        <p class="text-center text-white">Copyright &copy Sawsane</p>
+    </footer>
+    
+</body>
+</html>
